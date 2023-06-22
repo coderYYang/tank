@@ -2,7 +2,7 @@
  * @Author: yy 691335336@qq.com
  * @Date: 2023-06-18 11:50:47
  * @LastEditors: yy 691335336@qq.com
- * @LastEditTime: 2023-06-18 20:33:14
+ * @LastEditTime: 2023-06-22 10:29:33
  * @FilePath: /tank/src/service/position.ts
  * @Description: 位置服务
  */
@@ -37,7 +37,7 @@ class Position {
    * @description: 随机位置
    * @return {PositionType}
    */
-  protected position(): PositionType {
+  public position(): PositionType {
     return {
       x: Math.floor(Math.random() * (config.canvas.width / config.model.width)) * config.model.width,
       y:
